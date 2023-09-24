@@ -1,9 +1,11 @@
-// import React from 'react'
+import { Routers } from "./routers";
 
 const App = () => {
   return (
-    <div className="font-bold text-2xl underline text-center m-10">
-      App test tailwind
+    <div className="bg-grayDarker">
+      <div className="max-w-[1920px] aspect-video block mx-auto px-10">
+        <Routers />
+      </div>
     </div>
   );
 };
