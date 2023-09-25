@@ -1,23 +1,21 @@
 // import React from 'react'
-import { Link } from "react-router-dom";
-import HeaderFooter, { Footer } from "../header-footer";
+import HeroSection from "../sections/hero-section";
+import Header, { Footer } from "../header-footer";
 
 const HomePage = () => {
   return (
-    <div className="font-titillium">
-      <HeaderFooter />
-      {/* Hero section */}
-      <div className="flex flex-col justify-center items-center gap-5 h-[100vh]">
-        <h1 className="font-bold text-3xl text-white">HERO SECTION</h1>
-        <Link to={"/login"}>
-          <button className="py-2 px-4 rounded-lg bg-blue-500 text-white font-semibold">
-            Logout
-          </button>
-        </Link>
+    <>
+      {/* HomePage except Footer */}
+      <Header />
+      <div className="max-w-[1920px] aspect-video block mx-auto font-titillium px-10">
+        {/* Main section */}
+        <main>
+          <HeroSection />
+        </main>
       </div>
       {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 };
 
